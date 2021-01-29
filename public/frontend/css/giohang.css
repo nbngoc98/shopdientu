@@ -1,0 +1,16 @@
+span.cart-quantity {
+    background:black;
+    height: 15px;
+    width: 15px;
+    border-radius: 100%;
+    line-height: 15px;
+    position: absolute;
+    text-align: center;
+    right: 10px;
+    color: white;
+    left: 20px;
+    font-size: 10px;
+    
+    top: 3px;
+
+}

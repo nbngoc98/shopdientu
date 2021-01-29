@@ -1,0 +1,153 @@
+
+/*===============================================
+ [SASS DIRECTORY ]
+ [1] BLOCK HEADER
+ [2] BLOCK FOOTER
+ ==============================================*/
+
+.typeheader-2 {
+  /*HEADER SEARCH*/
+  /*BLOCK CART*/ }
+  .typeheader-2 .header-bonus {
+    position: relative; }
+  .typeheader-2 .header-bonus .coupon-code {
+    margin: 0;
+    padding: 12px 0;
+    background: #3fa69f;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px; }
+  .typeheader-2 .header-bonus .coupon-code p {
+    color: #fff;
+    font-weight: bold;
+    margin: 0;
+    font-size: 14px; }
+  .typeheader-2 .header-bonus .topbar-close {
+    position: absolute;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    z-index: 2;
+    cursor: pointer;
+    right: 20px;
+    left: auto; }
+  .typeheader-2 .header-bonus .topbar-close span.button {
+    border-radius: 0 0 3px 3px;
+    position: relative;
+    display: block;
+    color: transparent;
+    text-align: center;
+    padding: 0;
+    background: #ed3f46;
+    transition: all 0.3s ease 0s;
+    cursor: pointer; }
+  .typeheader-2 .header-bonus .topbar-close span.button:before {
+    content: "\f102";
+    font-size: 16px;
+    position: absolute;
+    top: 0;
+    bottom: auto;
+    font-family: fontawesome;
+    color: #fff;
+    font-weight: bold;
+    left: 4px;
+    right: auto; }
+  .typeheader-2 .header-bonus .topbar-close span.button.active:before {
+    content: "\f103"; }
+  .typeheader-2 .contact-html {
+    padding: 6px 0; }
+  .typeheader-2 .contact-html span.email {
+    padding: 0 20px; }
+  .typeheader-2 .contact-html span.email:before {
+    content: "\f0e0";
+    font-family: fontawesome;
+    font-size: 14px;
+    position: absolute;
+    top: 0;
+    bottom: auto;
+    left: 0;
+    right: auto; }
+  .typeheader-2 .contact-html span.email:after {
+    content: "";
+    background: #ccc;
+    height: 10px;
+    width: 1px;
+    position: absolute;
+    top: 8px;
+    bottom: auto;
+    left: auto;
+    right: 0; }
+  .typeheader-2 .contact-html span.add {
+    padding: 0 15px;
+    margin: 0 17px; }
+  .typeheader-2 .contact-html span.add:before {
+    content: "\f041";
+    font-family: fontawesome;
+    font-size: 14px;
+    position: absolute;
+    top: 0;
+    bottom: auto;
+    left: 0;
+    right: auto; }
+  .typeheader-2 .contact-html span.email, .typeheader-2 .contact-html span.add {
+    color: #555;
+    font-size: 12px;
+    font-weight: normal;
+    position: relative;
+    float: left; }
+  .typeheader-2 .header-top2 {
+    border-bottom: 1px solid #e8e8e8;
+    background: #fff; }
+  .typeheader-2 .header-top2 .header-top2-right {
+    text-align: right;
+    line-height: 38px; }
+  .typeheader-2 .header-top2 .header-top2-right ul.top-link {
+    list-style: none;
+    margin: 0;
+    vertical-align: top; }
+  .typeheader-2 .header-top2 .header-top2-right ul.top-link > li {
+    padding: 0;
+    display: inline-block;
+    position: relative;
+    list-style: outside none none;
+    margin-right: 30px;
+    float: left; }
+    .typeheader-2 .header-top2 .header-top2-right ul.top-link > li:after {
+      content: '';
+      background: #ebebeb;
+      width: 1px;
+      height: 10px;
+      position: absolute;
+      top: 14px;
+      right: -15px; }
+    .typeheader-2 .header-top2 .header-top2-right ul.top-link > li:last-child {
+      margin: 0; }
+      .typeheader-2 .header-top2 .header-top2-right ul.top-link > li:last-child:after {
+        display: none; }
+    .typeheader-2 .header-top2 .header-top2-right ul.top-link > li.login a {
+      padding: 0 3px; }
+      .typeheader-2 .header-top2 .header-top2-right ul.top-link > li.login a.res {
+        padding-left: 0; }
+    .typeheader-2 .header-top2 .header-top2-right ul.top-link > li > a {
+      display: inline-block;
+      padding: 0 13px;
+      position: relative;
+      color: #555;
+      font-size: 12px;
+      line-height: 20px; }
+      .typeheader-2 .header-top2 .header-top2-right ul.top-link > li > a:hover {
+        color: #ea3a3c; }
+      .typeheader-2 .header-top2 .header-top2-right ul.top-link > li > a:before {
+        font-family: 'FontAwesome';
+        margin-right: 7px; }
+      .typeheader-2 .header-top2 .header-top2-right ul.top-link > li > a span.fa-angle-down {
+        position: relative;
+        left: 5px; }
+    .typeheader-2 .header-top2 .header-top2-right ul.top-link > li.account > a:before {
+      content: "\f007"; }
+    .typeheader-2 .header-top2 .header-top2-right ul.top-link > li.wishlist a:before {
+      content: "\f004"; }
+    .typeheader-2 .header-top2 .header-top2-right ul.top-link > li.checkout a:before {
+      content: "\f045"; }

@@ -1,0 +1,112 @@
+@push('style')
+    <!-- DataTables -->
+    <link rel="stylesheet" href="{{asset('admins/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css')}}">
+    <link rel="stylesheet" href="{{asset('admins/plugins/datatables-responsive/css/responsive.bootstrap4.min.css')}}">
+@endpush
+@push('scripts')
+    <!-- DataTables -->
+    <script src="{{asset('admins/plugins/datatables/jquery.dataTables.min.js')}}"></script>
+    <script src="{{asset('admins/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js')}}"></script>
+    <script src="{{asset('admins/plugins/datatables-responsive/js/dataTables.responsive.min.js')}}"></script>
+    <script src="{{asset('admins/plugins/datatables-responsive/js/responsive.bootstrap4.min.js')}}"></script>
+    <script src="{{asset('vendor/sweetalert2/sweetalert2.min.js')}}"></script>
+    <script src="{{asset('vendor/product/index.js')}}"></script>
+    <!-- Bootstrap Switch -->
+    <script src="{{asset('admins/plugins/bootstrap-switch/js/bootstrap-switch.min.js')}}"></script>
+    <script>
+        $(function () {
+            $("input[data-bootstrap-switch]").each(function () {
+                $(this).bootstrapSwitch('state', $(this).prop('checked'));
+            });
+        })
+    </script>
+@endpush
+@extends('admin.admin')
+
+@section('title', 'Product')
+
+@section('content')
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+    @include('admin.layouts.content_header', ['name'=>'Thống kê năm', 'key'=>'Danh sách','name_title'=>'Danh Sách Thống Kê Theo Năm'])
+
+    <!-- Main content -->
+        <div class="content">
+            <div class="container-fluid">
+                <div class="row " style="margin-bottom: 30px ">
+                    <div class="col-md-6 ">
+                        <form class="form-inline " method="get " action=" ">
+                            <div class="form-group " style="margin-left: 10px;margin-right: 10px; ">
+                                <select name="year " id=" " class="form-control ">
+                                    <option value=" ">Chọn năm</option>
+                                    <option value="2010 ">2010</option>
+                                    <option value="2011 ">2011</option>
+                                    <option value="2012 ">2012</option>
+                                    <option value="2013 ">2013</option>
+                                    <option value="2014 ">2014</option>
+                                    <option value="2015 ">2015</option>
+                                    <option value="2016 ">2016</option>
+                                    <option value="2017 ">2017</option>
+                                    <option value="2018 ">2018</option>
+                                    <option value="2019 ">2019</option>
+                                    <option value="2020 ">2020</option>
+                                    <option value="2020 ">2021</option>
+                                </select>
+                            </div>
+                            <button type="submit " class="btn btn-success "><i class="fa fa-search "> Search</i></button>
+                            <button style="margin-left: 10px; " type="submit " name="export " value="true " class="btn btn-info "><i class="fa fa-save "> Export</i></button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-15 " style="background-color: white; ">
+                    <!-- /.card-header -->
+                    <div class="card-body p-0 ">
+                        <div class="table-responsive ">
+                            <table class="table m-0 ">
+                                <thead>
+                                <tr>
+                                    <th>STT</th>
+                                    <th>Ngày </th>
+                                    <th>Lượt mua</th>
+                                    <th>Tổng tiền</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td><a href="# ">1</a></td>
+                                    <td>11-12-2020</td>
+                                    <td>1 lượt</td>
+                                    <td>
+                                        12.214.500 vnđ
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><a href="# ">2</a></td>
+                                    <td>11-12-2020</td>
+                                    <td>1 lượt</td>
+                                    <td>
+                                        12.214.500 vnđ
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><a href="# ">3</a></td>
+                                    <td>11-12-2020</td>
+                                    <td>1 lượt</td>
+                                    <td>
+                                        12.214.500 vnđ
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- /.table-responsive -->
+                    </div>
+                </div>
+                <!-- /.row -->
+            </div><!-- /.container-fluid -->
+        </div>
+        <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+@endsection
