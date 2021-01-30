@@ -130,7 +130,7 @@
                 <!-- Menu Footer-->
                 <li class="user-footer">
                     <div class="float-left">
-                        <a href="#" class="btn btn-default btn-flat">Profile</a>
+                        <a href="{{ route('users.profile') }}" class="btn btn-default btn-flat">Profile</a>
                     </div>
                     <div class="float-right">
                         <a href="{{ route('admin.logout') }}" class="btn btn-default ">Đăng xuất</a>

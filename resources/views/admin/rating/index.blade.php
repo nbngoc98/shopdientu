@@ -57,10 +57,8 @@
                                             <td>{{$item->number}}</td>
                                             <td>{{date('d-m-Y', strtotime($item->created_at))}}</td>
                                             <td>
-                                                {{--                                    <a href=""--}}
-                                                {{--                                        class="btn  btn-info"><i class="fas fa-eye"></i></a>--}}
+                                                <a href="{{route('review.reply', ['id'=>$item->id] )}}" title="Trả lời" class="btn  btn-info"><i class="fas fa-share"></i></a>
                                                 <a href=""
-                                                   data-toggle=""
                                                    data-url="{{route('review.delete', ['id'=>$item->id] )}}"
                                                    class="btn  btn-danger action_delete"><i class="fas fa-trash"></i></a>
                                             </td>

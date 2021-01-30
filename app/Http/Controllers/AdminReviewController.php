@@ -22,6 +22,14 @@ class AdminReviewController extends Controller
             )
         );
     }
+    public function reply($id){
+        $review = Ratings::find($id);
+        return view('admin.rating.reply',
+            array(
+                'review' => $review,
+            )
+        );
+    }
     public function delete($id)
     {
         return $this->deleteModelTrait($id, $this->ratings);

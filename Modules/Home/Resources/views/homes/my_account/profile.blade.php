@@ -126,7 +126,7 @@
                                             {{--                                    <td class="text-center">{{$item->order->qty}}</td>--}}
                                             <td class="text-center">{!!   $item->status == 0 ? '<button class="btn btn-xs btn-default">Chờ xử lý</button>' : '<button class="btn btn-xs btn-success">Đã xử lý</button>' !!}</td>
                                             <td class="text-center">{{$item->created_at}}</td>
-                                            <td class="text-right">{{number_format($item->total + 30000)}}</td>
+                                            <td class="text-right">{{number_format($item->total + 30000)}}đ</td>
                                             <td class="text-center">
                                                 <a class="btn btn-info" title=""
                                                    data-toggle="tooltip" href="{{ route('home.order_history',['id'=>$item->id]) }}"

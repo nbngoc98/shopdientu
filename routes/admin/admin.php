@@ -219,6 +219,11 @@ Route::middleware('adminCheck:admin-web')->group(function (){
                 'uses' => 'AdminUserController@delete',
                 'middleware'=>'can:delete-users'
             ]);
+            Route::get('/profile', [
+                'as' => 'users.profile',
+                'uses' => 'AdminUserController@profile',
+    //                'middleware'=>'can:list-permission'
+            ]);
 
         });
         Route::prefix('user-guest')->group(function () {
@@ -368,12 +373,20 @@ Route::middleware('adminCheck:admin-web')->group(function (){
                 'uses' => 'AdminReviewController@index',
 //                'middleware'=>'can:list-permission'
             ]);
+            Route::get('/reply/{id}', [
+                'as' => 'review.reply',
+                'uses' => 'AdminReviewController@reply',
+//                'middleware'=>'can:list-permission'
+            ]);
             Route::get('/delete/{id}', [
                 'as' => 'review.delete',
                 'uses' => 'AdminReviewController@delete',
 //                'middleware'=>'can:delete-permission'
             ]);
         });
+
+
+
     });
 });
 

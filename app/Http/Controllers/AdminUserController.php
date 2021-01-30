@@ -89,4 +89,9 @@ class AdminUserController extends Controller
         return $this->deleteModelTrait($id, $this->user);
 
     }
+
+    public function profile()
+    {
+        return view('admin.users.profile');
+    }
 }
